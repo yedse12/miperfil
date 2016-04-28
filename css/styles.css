@@ -1,32 +1,56 @@
-@charset "utf-8";
-/* CSS Document */
-
 /* MainMenu */
-.MainMenu{
-    	background-color: #1E1E1E; /* 1 - Aplicar color de fondo al módulo*/
+.MainMenu {
+	background-color: #1E1E1E; /* 1 - Aplicar color de fondo al módulo*/
 	text-align: center;  	        /*  3 - Alinea el texto al centro*/
-	height:60px;         	       /*  6 - Asigna un alto al módulo en porcentajes */
+	height: 60px;         	       /*  6 - Asigna un alto al módulo en porcentajes */
 	position: fixed;     	       /*  8 - Permite que el modulo este siempre visible en el viewport (la pantalla del 
                                                                       dispositivo móvil  o pc) */
 	left: 0;             	   /*  9 - Con la siguiente coordenada posicionamos el modulo a lado izquierdo*/
-    	right: 0;            	   /*  10 - Con la siguiente coordenada posicionamos el modulo a lado derecho*/
-    	top: 0;              	   /*  11 - Con la siguiente coordenada posicionamos el modulo a la parte superior*/ 
+	right: 0;            	   /*  10 - Con la siguiente coordenada posicionamos el modulo a lado derecho*/
+	top: 0;              	   /*  11 - Con la siguiente coordenada posicionamos el modulo a la parte superior*/
 }
-
-.MainMenu-list{
-	margin:0;           /* 13 - Se elimina el margen que estaba provocando que las opciones cayeran */
-	padding: 0;         /* 14 - Eliminamos el espacio interior de lado izquierdo*/ 
-    
+.MainMenu-list {
+	margin: 0;           /* 13 - Se elimina el margen que estaba provocando que las opciones cayeran */
+	padding: 0;         /* 14 - Eliminamos el espacio interior de lado izquierdo*/
 }
-
-.MainMenu-item{
+.MainMenu-item {
 	display: inline-block;  /* 2 - Posicionamos las opciones del menú horizontalmente*/
 }
-
-
-.MainMenu-link{
+.MainMenu-link {
 	color: #00DBFF;             /* 4 - Asignamos color turquesa a los ítems del menú*/
 	text-decoration: none; /* 5 - Se quita el subrayado del hipervínculo*/
 	line-height: 60px;          /* 7 - Se establece la altura a la línea que forma el contenido de texto del menú. Esto 
                                                              provoca que se alinea verticalmente */
-	margin-right: 15px;       /*  12 - Agregamos margen a la derecha de cada opción del menú principal*/ 
+	margin-right: 15px;       /*  12 - Agregamos margen a la derecha de cada opción del menú principal*/
+}
+/* Header */
+.Header {
+	margin-top: 60px;     				/* 1 - Agregamos margen alto del mismo tamaño aplicado al modulo 
+del menu principal*/
+	background-image: url('../img/portada.jpg');  	/* 2 - Agregamos un background de imagen*/
+	background-repeat: no-repeat;                   		/* 3 - Indicamos que la imagen no se repita*/
+	background-position: center;                     		/* 4 - Posicionamos la imagen de backgroudn en el centro*/
+	background-size: cover;                          		/* 5 - Indicamos que se posicione a todo lo ancho del viewport*/
+	text-align: center;                              		/* 6 - Alineamos el avatar al centro*/
+	padding: 15px 0;                                 		/* 10 - Agregamos margen interno superior e inferior al elemento*/
+}
+.Header-imageContainer {
+	margin: 0;       		/* 18 - Se quita margen del contenedor del avatar*/
+}
+.Header-image {
+	border: 5px solid white;       /* 7 - Aplicamos un borde al avatar "tamaño, tipo y colo")*/
+	border-radius: 50%;         	 /* 8 - Aplicamos el estilo redondeado "HTML5" */
+	width: 150px;              	 /* 9  - Aplicamos un ancho a la imagen*/
+}
+.Header-name, .Header-link {
+	color: white;    		/* 11 - Asignamos color a 2 elementos usuario y nombre */
+}
+.Header-link {
+	font-size: 34px;         	/* 12 - Se asigna el tamaño de letra */
+	font-weight: bold;       	/* 13 - Se agrega estilo de negrita*/
+	text-decoration: none;   	/* 14 - Se elimina estilo subrayado*/
+}
+.Header-name {
+	font-size: 20px;      	/* 15 - Se asigna tamaño de letra*/
+	margin: 0;            		/* 16 - Se quita margen que evita que esten unidos El header name y el header link*/
+}

@@ -3,14 +3,30 @@
 
 /* MainMenu */
 .MainMenu{
-    background-color: #1E1E1E; /* 1 - Aplicar color de fondo al módulo*/
+    	background-color: #1E1E1E; /* 1 - Aplicar color de fondo al módulo*/
+	text-align: center;  	        /*  3 - Alinea el texto al centro*/
+	height:60px;         	       /*  6 - Asigna un alto al módulo en porcentajes */
+	position: fixed;     	       /*  8 - Permite que el modulo este siempre visible en el viewport (la pantalla del 
+                                                                      dispositivo móvil  o pc) */
+	left: 0;             	   /*  9 - Con la siguiente coordenada posicionamos el modulo a lado izquierdo*/
+    	right: 0;            	   /*  10 - Con la siguiente coordenada posicionamos el modulo a lado derecho*/
+    	top: 0;              	   /*  11 - Con la siguiente coordenada posicionamos el modulo a la parte superior*/ 
 }
 
 .MainMenu-list{
-	
+	margin:0;           /* 13 - Se elimina el margen que estaba provocando que las opciones cayeran */
+	padding: 0;         /* 14 - Eliminamos el espacio interior de lado izquierdo*/ 
     
 }
 
 .MainMenu-item{
-	
+	display: inline-block;  /* 2 - Posicionamos las opciones del menú horizontalmente*/
 }
+
+
+.MainMenu-link{
+	color: #00DBFF;             /* 4 - Asignamos color turquesa a los ítems del menú*/
+	text-decoration: none; /* 5 - Se quita el subrayado del hipervínculo*/
+	line-height: 60px;          /* 7 - Se establece la altura a la línea que forma el contenido de texto del menú. Esto 
+                                                             provoca que se alinea verticalmente */
+	margin-right: 15px;       /*  12 - Agregamos margen a la derecha de cada opción del menú principal*/ 
